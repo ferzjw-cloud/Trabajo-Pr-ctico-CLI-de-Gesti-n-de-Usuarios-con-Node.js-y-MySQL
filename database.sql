@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS user_cli;
+
+USE user_cli;
+
+CREATE TABLE IF NOT EXISTS users (
+    id VARCHAR(100) PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
